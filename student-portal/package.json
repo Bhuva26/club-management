@@ -1,0 +1,15 @@
+{
+  "name": "smart-clubs-system",
+  "version": "1.0.0",
+  "description": "Smart Clubs Management and Engagement System",
+  "main": "server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon server.js",
+    "client": "cd frontend && npm start",
+    "install-deps": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
